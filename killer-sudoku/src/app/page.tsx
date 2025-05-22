@@ -24,8 +24,9 @@ export default function Home() {
   };
 
   return (
-    <main style={{ padding: 32 }}>
-      <h1>Find Combinations for a Target Sum</h1>
+    <main className="glow-container">
+      <h1>Killer Sudoku</h1>
+      <h3>Find Combinations for a Target Sum</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="number"
@@ -39,7 +40,7 @@ export default function Home() {
 
       {loading && <p>Loading...</p>}
 
-      <div style={{ marginTop: 20 }}>
+      <div>
         {results.length > 0 ? (
           <ul>
             {results.map((combo, index) => (
